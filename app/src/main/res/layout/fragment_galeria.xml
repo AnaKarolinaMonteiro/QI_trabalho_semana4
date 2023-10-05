@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".galeriaFragment">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +20,6 @@
                 android:layout_width="22dp"
                 android:layout_height="140dp"
                 android:layout_weight="1"
-                android:src="@tools:sample/avatars"
                 app:srcCompat="@drawable/avatar" />
 
             <LinearLayout
@@ -60,6 +58,8 @@
 
             </LinearLayout>
 
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -97,8 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="541dp"
             android:orientation="vertical"
-            android:padding="16dp"
-            tools:context=".MainActivity">
+            android:padding="16dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"

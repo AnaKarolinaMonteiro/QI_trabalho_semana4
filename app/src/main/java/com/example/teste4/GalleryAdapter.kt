@@ -10,22 +10,16 @@ import androidx.recyclerview.widget.RecyclerView
 class GaleriaAdapter : RecyclerView.Adapter<GaleriaAdapter.ViewHolder>() {
     private val imagens = intArrayOf(
         R.drawable.menina1,
-        R.drawable.menina10,
-        R.drawable.menina11,
-        R.drawable.menina12,
-        R.drawable.menina13,
-        R.drawable.menina14,
-        R.drawable.menina15,
-        R.drawable.menina16,
-        R.drawable.menina17,
-        R.drawable.menina18,
         R.drawable.menina2,
-        R.drawable.menina20,
         R.drawable.menina3,
         R.drawable.menina4,
-        R.drawable.menina8
+        R.drawable.menina5,
+        R.drawable.menina6,
+        R.drawable.menina7,
+        R.drawable.menina8,
+        R.drawable.menina9
 
-    ) // Adicione suas imagens aqui
+    )
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageView)
@@ -38,6 +32,10 @@ class GaleriaAdapter : RecyclerView.Adapter<GaleriaAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val layoutParams = holder.imageView.layoutParams
+        layoutParams.height = layoutParams.width // Define a altura igual à largura
+        holder.imageView.layoutParams = layoutParams
+
         holder.imageView.setImageResource(imagens[position])
     }
 

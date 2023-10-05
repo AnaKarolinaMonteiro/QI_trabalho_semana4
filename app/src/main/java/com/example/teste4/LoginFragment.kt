@@ -1,26 +1,23 @@
 package com.example.teste4
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.example.teste4.databinding.*
 import androidx.navigation.fragment.findNavController
-import com.example.teste4.databinding.FragmentSecondBinding
 
-
-class SecondFragment : Fragment() {
-
-    private var _binding: FragmentSecondBinding? = null
+class LoginFragment : Fragment() {
+    private var _binding: FragmentLoginBinding? = null
 
     private val binding get() = _binding!!
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -28,8 +25,11 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnContinuar.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_loginFragment)
+        binding.btnlogin.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_galeriaFragment)
+        }
+        binding.btncadastrar.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registreseFragment)
         }
     }
 

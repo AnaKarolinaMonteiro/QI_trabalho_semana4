@@ -63,10 +63,10 @@
             android:inputType="textMultiLine" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnContinuar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Continuar" />
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

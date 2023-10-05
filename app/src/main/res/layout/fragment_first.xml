@@ -47,10 +47,17 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/btnCadastrar"
+            android:id="@+id/btnToCadastrar"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Cadastrar" />
+
+        <Button
+            android:id="@+id/btnToLogar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Login" />
     </LinearLayout>
 
 
