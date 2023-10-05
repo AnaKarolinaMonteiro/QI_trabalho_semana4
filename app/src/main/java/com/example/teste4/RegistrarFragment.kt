@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.teste4.databinding.FragmentRegistrarBinding
 import androidx.navigation.fragment.findNavController
@@ -25,9 +26,10 @@ class RegistrarFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as AppCompatActivity).supportActionBar?.title = ""
 
         binding.btnToRegistro.setOnClickListener {
-            findNavController().navigate(R.id.action_registreseFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_RegistrarFragment_to_SecondFragment)
         }
         binding.btnCancelar.setOnClickListener {
             findNavController().navigate(R.id.action_registreseFragment_to_FirstFragment)

@@ -11,11 +11,11 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
         <action
-            android:id="@+id/action_FirstFragment_to_registreseFragment"
-            app:destination="@id/registreseFragment" />
-        <action
             android:id="@+id/action_FirstFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_RegistrarFragment"
+            app:destination="@id/RegistrarFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -33,25 +33,25 @@
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_galeriaFragment"
-            app:destination="@id/galeriaFragment" />
+            app:destination="@id/GaleriaFragment" />
         <action
             android:id="@+id/action_loginFragment_to_registreseFragment"
-            app:destination="@id/registreseFragment" />
+            app:destination="@id/RegistrarFragment" />
     </fragment>
     <fragment
-        android:id="@+id/registreseFragment"
-        android:name="com.example.teste4.registreseFragment"
+        android:id="@+id/RegistrarFragment"
+        android:name="com.example.teste4.RegistrarFragment"
         android:label="fragment_registrese"
         tools:layout="@layout/fragment_registrar" >
         <action
             android:id="@+id/action_registreseFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
         <action
-            android:id="@+id/action_registreseFragment_to_SecondFragment"
+            android:id="@+id/action_RegistrarFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
-        android:id="@+id/galeriaFragment"
+        android:id="@+id/GaleriaFragment"
         android:name="com.example.teste4.GaleriaFragment"
         android:label="GaleriaFragment" />
 </navigation>
